@@ -1,0 +1,401 @@
+/* General Styles */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Header */
+.navbar {
+  transition: background-color 0.3s ease;
+  padding: 0 2%;
+}
+
+.nav-links {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin: auto 1rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-links:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Title */
+.title {
+  width: 100%;
+  height: 100vh;
+  background: url("images/title.png") center/cover no-repeat;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.0));
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-heading {
+  font-size: 3.6rem;
+}
+
+.slogan {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.map-button {
+  padding: 2% 4%;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* About */
+.about {
+  padding: 2.5rem 20%;
+  text-align: center;
+}
+
+.about-heading {
+  margin: 1.5rem 0;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2%;
+  margin-bottom: 2.5rem;
+}
+
+.about-description {
+  font-size: 0.85rem;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 5rem 25%;
+}
+
+.carousel-inner {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+}
+
+.testimonial-item {
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+
+/* Gallery */
+.gallery {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Newsletter Signup */
+.newsletter {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 5rem 25%;
+}
+
+.newsletter-item {
+  margin: 2rem 0;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-control {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.newsletter .btn {
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* FAQ */
+.faq {
+  text-align: center;
+  padding: 5rem 25%;
+}
+
+.faq-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #ebebeb;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.faq-icon {
+  font-size: 20px;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 5rem 25%;
+}
+
+.contact input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.contact .form-check {
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.contact button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.form-group.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  flex: 0 0 calc(50% - 1rem);
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 2.5rem 30% 0.05rem;
+  font-size: smaller;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.footer-item {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: #000;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #888888;
+}
+
+/* Map */
+#map {
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Titile */
+  .main-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .slogan {
+    font-size: 1.4rem;
+  }
+
+  .map-button {
+    padding: 1rem;
+  }
+
+  /* About */
+  .about {
+    padding: 1.5rem 5%;
+  }
+
+  .about-heading {
+    margin: 1rem 0;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 1.5rem 5%;
+  }
+
+  /* Gallery */
+  .gallery {
+    padding: 2.5rem 0;
+  }
+
+  /* Newsletter Signup */
+  .newsletter {
+    padding: 1.5rem 5%;
+  }
+
+  .newsletter-item {
+    margin: 1.5rem 0;
+  }
+
+  /* FAQ */
+  .faq {
+    margin: 0;
+  }
+
+  .faq-items {
+    margin: 1rem auto;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 1rem;
+  }
+
+  .contact button {
+    margin-bottom: 2rem;
+  }
+
+  .col-md-6 {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2.5rem 5% 0.05rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .main-heading {
+    font-size: 2.8rem;
+  }
+
+  .slogan {
+    font-size: 1.2rem;
+  }
+
+  .map-button {
+    padding: 1rem;
+  }
+
+  .faq {
+    padding: 5rem 5%;
+  }
+
+  h1{
+    font-size: 1.8rem;
+  }
+}
